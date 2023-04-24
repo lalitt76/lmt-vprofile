@@ -10,7 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3472be47-dc9c-4447-ab1b-b4d917bf7d58" name="Default Changelist" comment="" />
+    <list default="true" id="3472be47-dc9c-4447-ab1b-b4d917bf7d58" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes/kube-app/vproapp-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes/kube-app/vproapp-service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes/kube-app/vproappdep.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes/kube-app/vproappdep.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,9 +75,17 @@
     </state>
     <state x="-3160" y="358" key="#com.intellij.fileTypes.FileTypeChooser/-1920.25.1920.966/-3840.25.1920.1055/0.25.1680.1025@-3840.25.1920.1055" timestamp="1682018518111" />
     <state x="-3160" y="358" key="#com.intellij.fileTypes.FileTypeChooser/-3840.25.1920.1055/-1920.25.1920.968/0.25.1680.1025@-3840.25.1920.1055" timestamp="1682196588497" />
+    <state x="-1366" y="247" key="IDE.errors.dialog" timestamp="1682373515614">
+      <screen x="-1920" y="25" width="1920" height="966" />
+    </state>
+    <state x="-1366" y="247" key="IDE.errors.dialog/-1920.25.1920.966/-3840.25.1920.1055/0.25.1680.1025@-1920.25.1920.966" timestamp="1682373515614" />
     <state x="349" y="173" key="SettingsEditor" timestamp="1682363588844">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
     <state x="349" y="173" key="SettingsEditor/-1920.25.1920.966/-3840.25.1920.1055/0.25.1680.1025@0.25.1680.1025" timestamp="1682363588844" />
+    <state x="-1199" y="225" key="git4idea.branch.GitSmartOperationDialog" timestamp="1682373629155">
+      <screen x="-1920" y="25" width="1920" height="966" />
+    </state>
+    <state x="-1199" y="225" key="git4idea.branch.GitSmartOperationDialog/-1920.25.1920.966/-3840.25.1920.1055/0.25.1680.1025@-1920.25.1920.966" timestamp="1682373629155" />
   </component>
 </project>
