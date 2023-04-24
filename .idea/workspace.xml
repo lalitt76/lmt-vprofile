@@ -10,7 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3472be47-dc9c-4447-ab1b-b4d917bf7d58" name="Default Changelist" comment="" />
+    <list default="true" id="3472be47-dc9c-4447-ab1b-b4d917bf7d58" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/kubernetes/commands" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,9 +68,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-3160" y="358" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1682196588497">
-      <screen x="-3840" y="25" width="1920" height="1055" />
+    <state x="-1240" y="330" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1682379065585">
+      <screen x="-1920" y="25" width="1920" height="966" />
     </state>
+    <state x="-1240" y="330" key="#com.intellij.fileTypes.FileTypeChooser/-1920.25.1920.966/-3840.25.1920.1055/0.25.1680.1025@-1920.25.1920.966" timestamp="1682379065585" />
     <state x="-3160" y="358" key="#com.intellij.fileTypes.FileTypeChooser/-1920.25.1920.966/-3840.25.1920.1055/0.25.1680.1025@-3840.25.1920.1055" timestamp="1682018518111" />
     <state x="-3160" y="358" key="#com.intellij.fileTypes.FileTypeChooser/-3840.25.1920.1055/-1920.25.1920.968/0.25.1680.1025@-3840.25.1920.1055" timestamp="1682196588497" />
     <state x="-1366" y="247" key="IDE.errors.dialog" timestamp="1682373515614">

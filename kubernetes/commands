@@ -1,0 +1,200 @@
+1  kops create cluster  --name=kops.tyagienterprises.com --state=s3://vprofile-kops-state-lmt --zones=us-east-1a,us-east-1b --node-count=2 --node-size=t3.small --master-size=t3.medium --dns-zone=kops.tyagienterprises.com --node-volume-size=8 --master-volume-size=8
+    2  kops update cluster --name kops.tyagienterprises.com --state=s3://vprofile-kops-state-lmt --yes --admin
+    3  kops validate cluster --state=s3://vprofile-kops-state-lmt
+    4  kubectl get all
+    5  kubectl get -A
+    6  kubectl get pods
+    7  vim ~/.bashrc
+    8  source ~/.bashrc
+    9  k get all
+   10  k get nodes
+   11  k get nodes --show-labels
+   12  aws
+   13  aws ec2 create-volume --availabilty-zone=us-east-1a -size=3 --volume-type=gp2
+   14  aws ec2 create-volume help
+   15  aws ec2 create-volume --availabilty-zone us-east-1a -size 3 --volume-type gp2
+   16  aws ec2 create-volume --availability-zone us-east-1a -size 3 --volume-type gp2
+   17  aws ec2 create-volume --availability-zone us-east-1a --size 3 --volume-type gp2
+   18  k get nodes
+   19  k lable nodes i-040ac1923e04cf136 zone=us-east-1a
+   20  k label nodes i-040ac1923e04cf136 zone=us-east-1a
+   21  k label nodes i-02feaaecaa2eeee68 zone=us-east-1b
+   22  ls
+   23  mkdir kube0app
+   24  mkdir kube-app
+   25  ls
+   26  rm -r kube0app/
+   27  cd kube-app/
+   28  ls
+   29  vim app-secret.yaml
+   30  k apply -f app-secret.yaml
+   31  k get secret
+   32  k describe secret app-secret
+   33  k get all
+   34  k get cluster
+   35  history
+   36  ls
+   37  vim vprodbdep.yml
+   38  k apply -f vprodbdep.yml
+   39  k get deploy
+   40  k get pod
+   41  k describe pod vprodb-68ddb8f95c-bfflq
+   42  k get pods
+   43  k logs vprodb-68ddb8f95c-bfflq
+   44  ls
+   45  vim vprodbdep.yml
+   46  k get deploy
+   47  k delete deploy vprodb
+   48  k get deploy
+   49  k get pods
+   50  k apply -f vprodbdep.yml
+   51  k get deploy
+   52  k get pods
+   53  k logs vprodb-6fb848995-pbqgt
+   54  k get pods
+   55  ls
+   56  rm -f app-secret.yaml
+   57  rm vprodbdep.yml
+   58  ls
+   59  git clone git@github.com:lalitt76/vprofile.git
+   60  cd ~/.sshj
+   61  cd ~/.ssh
+   62  ls
+   63  cat id_rsa.pub
+   64  cd
+   65  ls
+   66  cd kube-app/
+   67  ls
+   68  git clone git@github.com:lalitt76/vprofile.git
+   69  ls
+   70  cd vprofile/
+   71  ls
+   72  cd kubernetes/
+   73  ls
+   74  cd ..
+   75  rm -r kube-app/
+   76  git clone git@github.com:lalitt76/vprofile.git
+   77  ls
+   78  cd vprofile/
+   79  ls
+   80  cd kubernetes/
+   81  ls
+   82  cd kube-app/
+   83  ls
+   84  k apply -f .
+   85  k get pods
+   86  k logs vpromq01-6d7976f546-4zqtf
+   87  k describe pod vpromq01-6d7976f546-4zqtf
+   88  cd ..
+   89  git pull
+   90  cd vprofile/
+   91  git pull
+   92  k describe pod vpromq01-6d7976f546-4zqtf
+   93  k get ds
+   94  k get deploy
+   95  k delete deploy vpromq01
+   96  k delete deploy vproapp
+   97  k get deploy
+   98  ls
+   99  cd kubernetes/
+  100  ls
+  101  cd kube-app/
+  102  k apply -f .
+  103  k get deploy
+  104  k describe deploy vproapp
+  105  k get deploy
+  106  k get pods
+  107  k get svc
+  108  k get pods
+  109  k describe probe vproapp-6d9c7c9c5-c8cjj
+  110  k describe pod vproapp-6d9c7c9c5-c8cjj
+  111  history
+  112  k all
+  113  k delete -f .
+  114  lsa
+  115  ls
+  116  cd ..
+  117  git pull
+  118  ls
+  119  cd kubernetes/
+  120  cd kube-app/
+  121  ls -l
+  122  k apply -f app-secret.yaml
+  123  k apply -f .
+  124  k get deploy
+  125  k get pod
+  126  k logs vproapp-deploy-6d9c7c9c5-2wmdl
+  127  k describe pod vproapp-deploy-6d9c7c9c5-2wmdl
+  128  k get svc
+  129  k describe pod vproapp-deploy-6d9c7c9c5-2wmdl
+  130  k get pod
+  131  k describe pod
+  132  k get pod
+  133  k describe pod vproapp-deploy-6d9c7c9c5-2wmdl
+  134  k exec -it vproapp-deploy-6d9c7c9c5-2wmdl --container init-mydb -- /bin/ssh
+  135  k exec -it vproapp-deploy-6d9c7c9c5-2wmdl --container init-mydb -- /bin/bash
+  136  k exec vproapp-deploy-6d9c7c9c5-2wmdl --container init-mydb -- ls /
+  137  k exec vproapp-deploy-6d9c7c9c5-2wmdl --container init-mydb -- nslookup vproddb
+  138  k exec vproapp-deploy-6d9c7c9c5-2wmdl --container init-mydb -- nslookup vprodb
+  139  k exec vproapp-deploy-6d9c7c9c5-2wmdl --container init-mydb -- nslookup vpromq01
+  140  k exec vproapp-deploy-6d9c7c9c5-2wmdl --container init-mydb -- nslookup vpromc
+  143  k exec vproapp-deploy-6d9c7c9c5-2wmdl --container init-mydb -- ping vprodb
+  144  k exec vproapp-deploy-6d9c7c9c5-2wmdl --container init-mydb -- nslookup vpromq01
+  145  k exec vproapp-deploy-6d9c7c9c5-2wmdl --container init-mydb -- cat /var/run/secrets/kubernetes.io/serviceaccount/namespace
+  146  k logs vproapp-deploy-6d9c7c9c5-2wmdl --container init-mydb
+  147  k get svc
+  148  k descibe svc vprodb-service
+  149  k describe svc vprodb-service
+  150  k exec vproapp-deploy-6d9c7c9c5-2wmdl --container init-mydb -- nslookup vpromq01-service
+  151  k exec vproapp-deploy-6d9c7c9c5-2wmdl --container init-mydb -- nslookup vprodb-service
+  152  k exec vproapp-deploy-6d9c7c9c5-2wmdl --container init-mydb -- nslookup vprodb-service.default.svc.cluster.local
+  153  cd ..
+  154  git pull
+  155  cd kubernetes/kube-app/
+  156  k get ds
+  157  k get deploy
+  158  k delete deploy vproapp-deploy
+  159  k get deploy
+  160  k get pods
+  161  k logs vproapp-deploy-6d9c7c9c5-2wmdl
+  162  k get pods
+  163  k apply -f .
+  164  k get pods
+  165  k describe pod vproapp-deploy-c6b7bbbd7-mf4cj
+  166  k get svc
+  167  k get pods
+  168  k descibe pod vproapp-deploy-c6b7bbbd7-mf4cj
+  169  k describe pod vproapp-deploy-c6b7bbbd7-mf4cj
+  170  k exec -it  vproapp-deploy-c6b7bbbd7-mf4cj --container vproapp -- /bin/bash
+  171  cd ..
+  172  git pull
+  173  k get svc
+  174  k delete svc vproapp-service
+  175  cd kubernetes/
+  176  ls
+  177  cd kube-app/
+  178  ls
+  179  k get deploy
+  180  k get pods
+  181  k apply -f .
+  182  k get svc
+  183  k delete svc vproapp-service
+  184  k delete svc vprocache01-servic
+  185  k get svc
+  186  k delete svc vprocache01-service
+  187  k delete svc vprodb-service
+  188  k delete svc vpromq01-service
+  189  k get deploy
+  190  k delete deploy vproapp-deploy
+  191  k delete deploy vprodb-deploy
+  192  cd ..
+  193  git pull
+  194  cd kubernetes/kube-app/
+  195  k apply -f .
+  196  k get deploy
+  197  k get svc
+  198  k get pod
+  199  k get svc
+  200  docker volumes
+  201  k delete -f .
+  202  kops delete cluster --name kops.tyagienterprises.com --state=s3://vprofile-kops-state-lmt --yes
